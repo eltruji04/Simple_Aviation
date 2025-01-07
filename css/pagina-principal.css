@@ -1,14 +1,11 @@
-@font-face {
-    font-family: 'PTSerifCaption';
-    src: url(../fonts/PTSerifCaption-Regular.ttf) format('truetype');
-    font-weight: normal;
-    font-size: medium;
+
+* {
+    box-sizing: border-box;
 }
 
 /* Imagen del fondo */
 body {
     min-height: 100vh;
-    background: url(/imagenes/Fondo\ de\ pagina.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -19,7 +16,7 @@ header {
     left: 0;
     width: 100%;
     padding: 20px 4px;
-    background: rgba(255, 255, 255, .1);
+    background: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +31,7 @@ header {
 /* Diseño del menu del header */
 .nav a {
     color: white;
-    font-family: arial;
+    font-family: Arial, sans-serif;
     font-size: 20px;
     text-decoration: none;
     margin-left: 0px;
@@ -73,15 +70,14 @@ nav {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
     margin: 6px 18px;
     cursor: pointer;
     border-radius: 10%;
-    font-family: arial;
+    font-family: Arial, sans-serif;
     font-size: 28px;
     overflow: hidden;
     position: relative;
-    transition: transform 0.3s;
+    transition: transform 0.5s ease;
     backdrop-filter: blur(7px);
 }
 
@@ -96,6 +92,7 @@ nav {
 /* Diseño del boton cuando se le pone el cursor encima */
 .boton-imagen:hover img {
     transform: scale(1.15);
+    transition: transform 0.5s ease;
 }
 
 /* Diseño del footer */
@@ -105,7 +102,7 @@ footer {
     text-align: center;
     padding: 8px;
     /* position: absolute; */
-    bottom: 0100;
+    bottom: 0;
     width: 100%;
     font-size: 21px ;
 }
